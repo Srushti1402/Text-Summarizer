@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Text Summarizer</title>
+              
+        <style>
+            body{
+               text-align: center;
+                background-color: #25274D;
+                color: white;
+                font-family: sans-serif;
+            }
+            h1{
+                font-weight: bold;
+            }
+            p{
+                font-size: 18px;
+            }
+            .btn_summary{
+                background-color: #2E9CCA;
+                color: white;
+                width: 150px;
+                height: 40px;
+                font-weight: bold;
+                font-size: 15px;
+                border-radius: 15px;
+                border: 1px;
+               }
+
+               *{
+                box-sizing: border-box;
+               }
+
+               .row{
+                display: flex;
+               }
+
+               .column{
+                flex: 33.33%;
+                padding:5px;
+               } 
+                  
+               .text{
+                font-size: 20px;
+                padding-left: 20px;
+               }
+
+        </style>
+    </head>
+    
+    <body>
+       
+
+     <figure>
+            <figcaption align="left"><b>Need a summary to save time?</b></figcaption>
+             
+             <div class="row">
+                 <div class="column">
+                   <img src="https://media.tenor.com/images/e0eb10ec119bf6247a763fc752c48bc7/tenor.gif" align="left" width="285" height="185">
+                 </div>
+                  <div class="column">
+                    <img src="https://c.tenor.com/iqo2FfPLq2gAAAAj/arrow-flecha.gif"   width="115" height="115" style="margin-top: 20px;">  
+                  </div>
+                  <div class="column">
+                     <img src="https://professorowl.files.wordpress.com/2013/06/fotolia_35265232_xl5.png"  width="285" height="185"> 
+                  </div>
+                  <div class="column">
+                    <img src="https://c.tenor.com/iqo2FfPLq2gAAAAj/arrow-flecha.gif"   width="115" height="115" style="margin-top: 20px" >  
+                  </div>
+                  <div class="column">
+                    <img src="https://media4.giphy.com/media/PwswtX5BPAK6vGuuyk/giphy.gif?cid=6c09b952rqojqeit96g5qemhgzhqtm7fxu57f73gadhxytrj&rid=giphy.gif&ct=s"   width="285" height="185">  
+                   </div>
+             </div>          
+     </figure>
+
+              <div id="d1">
+                  <h1>Text Summarizer</h1>
+
+            <p>Enter text</p><br>
+            <textarea  form="gettext" rows="6" cols="100" name="text"></textarea><br><br>
+            <form action="{{ url_for("gfg")}}" method="post" id="gettext">
+            <button class="btn_summary" onclick="summarized()">Get Summary</button>
+            </form>
+            
+     
+        </div>
+        <!--script>
+            function sammarized(){
+                document.getElementById("summary").innerHTML="Display Summary";
+            }
+        </script-->
+        
+    </body>
+</html>
